@@ -233,6 +233,8 @@ h1, h2, h3, h4, h5, h6 {
   /* background: linear-gradient(to bottom, #020258 0%, #348fad 100%); */
   background-size: cover;
   background: rgba(0,0,70,0.6);
+
+  height: 100%;
 }
 
 #hero:before {
