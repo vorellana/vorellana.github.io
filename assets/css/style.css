@@ -229,7 +229,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/code.png") top center;
+  /* background: url("../img/code.png") top center; */
   /* background: linear-gradient(to bottom, #020258 0%, #348fad 100%); */
   background-size: cover;
 }
