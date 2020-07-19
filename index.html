@@ -15,6 +15,14 @@
 
   <script>
       // alert('incienaod ps...')
+
+    if ('loading' in HTMLImageElement.prototype) {
+      console.log('El navegador soporta `lazy-loading`...');
+    } else {
+      console.log('`lazy-loading` no soportado...');
+    }
+
+
       var foo = new Date();
       console.log('hola1 ' + foo + ' ' + foo.getMilliseconds());
   </script>
@@ -454,7 +462,7 @@
             <!-- <label>Admin (Angular)</label> -->
             <b>Admin (Angular)</b>
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+              <img loading="lazy" data="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
               <div class="portfolio-links">
                 <a href="assets/img/portfolio/portfolio-1.jpg" data-gall="portfolioGallery" class="venobox" title="Admin (Angular)">Ampliar</a>
                 <a href="https://vorellana.github.io/angular-erp-1/" title="Demo">Demo</a>
@@ -465,7 +473,7 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <b>Web Responsive (Bootstrap)</b>
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+              <img loading="lazy" src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
               <div class="portfolio-links">
                 <a href="assets/img/portfolio/portfolio-2.jpg" data-gall="portfolioGallery" class="venobox" title="Web Responsive (Bootstrap)">Ampliar</a>
                 <a href="https://vorellana.github.io/web-responsive/" title="Detalle">Demo</a>
@@ -476,7 +484,7 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <b>API REST (.NET Core)</b>
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+              <img loading="lazy" src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
               <div class="portfolio-links">
                 <a href="assets/img/portfolio/portfolio-3.jpg" data-gall="portfolioGallery" class="venobox" title="API REST (.NET Core)">Ampliar</a>
                 <a href="portfolio-details-3.html" title="Detalle">Detalle</a>
